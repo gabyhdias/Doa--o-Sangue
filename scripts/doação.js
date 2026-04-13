@@ -14,9 +14,7 @@ document.getElementById("formDoacao").addEventListener("submit", function (e) {
     
 
     if(nome.length < 10 ) return alert("Nome Inválido");
-    if(idade < 16 ) erros.push("Deve-se ter idade superior a 16 anos");
-    if(telefone.lenght < 8 ) return alert("Telefone Inválido");
-    if(motivo.lenght < 10 ) return alert("Caracteres Insuficientes");
+    if(idade < 16 ) erros.push("Idade deve ser superior a 16 anos");
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
 });
