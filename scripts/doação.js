@@ -16,7 +16,6 @@ document.getElementById("formDoacao").addEventListener("submit", function (e) {
     if(nome.length < 10 ) return alert("Nome Inválido");
     if(idade < 16 ) return alert("Idade deve ser superior a 16 anos");
     if(peso < 50) return alert("Peso deve ser superior a 50kg");
-    if(telefone) return alert("O telefone deve conter apenas números")
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome: " + nome;
 });
