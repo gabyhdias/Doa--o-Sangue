@@ -8,12 +8,7 @@ document.getElementById("formDoacao").addEventListener("submit", function (e) {
     let idade = document.getElementById("idade").value;
     let cidade = document.getElementById("cidade").value;
     
-    let moradia = document.querySelector('input[name="moradia"]:checked');
-    let quintal = document.querySelector('input[name="quintal"]:checked');
-    let pet = document.querySelector('input[name="pet"]:checked');
-    let horas = document.getElementById("horas").value;
-    let motivo = document.getElementById("motivo").value;
-    let termos = document.querySelector('input[name="termos"]:checked');
+    let tipoSanguineo = document.querySelector('input[name="tipoSanguineo"]:checked');
 
     if(nome.length < 3 ) return alert("Nome Inválido");
     if(idade.value < 18 ) return alert("Idade Inválida");
